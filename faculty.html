@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  background-color: #04AA6D;
+  color: white;
+}
+ 
+i {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 40px;
+}
+.footer{
+text-align:center;
+color:blue;
+font-size:40%;
+</style>
+</head>
+<body>
+ <div class="topnav">
+  
+  <form action="#" method="POST">     
+  <a class="active" href="/">HOME</a>
+  <a href="/login">LOGIN</a>
+  <a href="/dashboard">DASHBOARD</a>
+</div>
+<u><h1><center>FACULTY DETAILS OF DEPARTMENT</center></h1></u>
+<br><br>
+<table>
+  <tr>
+    <th>SINO</th>
+    <th>Name of the faculty member</th>
+    <th>Designation</th>
+    <th>Highest Qualification</th>
+    
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><img src="{{url_for('static',filename='h.jpeg') }}" alt="flag" height="200" width="200"/>
+    <br>
+    <p style="color:blue;">Dr.T.R.Srinivas</p>
+    
+     <a href="/hodp">Profile</a>	</td>
+    <td>HOD</td>
+    <td>M.Tech</td
+    <td>ph.D</td> 
+  </tr>
+  
+  <tr>
+    <td>2</td>
+    <td><img src="{{url_for('static',filename='s.jpeg') }}" alt="flag" height="200" width="200"/>
+    <br><p style="color:blue;">Swathi</p>
+    <a href="/swathip">Profile</a>
+    </td>
+    <td>Assistant Professor</td>
+    <td>M.Tech</td>
+    
+  </tr>
+  
+  <tr>
+    <td>3</td>
+    <td><img src="{{url_for('static',filename='sw.jpeg') }}" alt="flag" height="200" width="200"/>    <br><p style="color:blue;">Swapna</p>
+    <a href="/swapnap">Profile</a>
+    </td>
+    <td>Assistant Professor</td>
+    <td>M.Tech</td>
+  
+  </tr>
+  
+  <tr>
+    <td>4</td>
+    <td><img src="{{url_for('static',filename='n.jpeg') }}" alt="flag" height="200" width="200"/>
+    <br><p style="color:blue;">NagaLaxmi</p>
+    <a href="/nagap">Profile</a>
+    </td>
+    <td>Assistant Professor</td>
+    <td>M.Tech</td> 
+  </tr>
+  
+  <tr>
+    <td>5</td>
+    <td><img src="{{url_for('static',filename='p.jpeg') }}" alt="flag" height="200" width="200"/>
+    <br><p style="color:blue;">Naveen</p>
+    <a href="">Profile</a>
+    </td>
+    <td>Assistant Professor</td>
+    <td>M.Tech</td> 
+  </tr>
+
+</table>
+
+</body>
+</html>
+

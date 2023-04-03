@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  background-color: #04AA6D;
+  color: white;
+}
+
+i {
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 20px;
+}
+.right{
+        position: absolute;
+        right: 34px;
+        top: 10px;
+display: inline-block;
+ }
+ .formwork{
+ color:green;
+ 
+ }
+ 
+ .container h5{
+font-size: 50px;
+ color:black;
+ font-family: 'Baloo Bhai 2';
+  
+ }
+ .btn{
+        margin: 0px 9px;
+        background-color: gray
+        color: ;
+        text-align:center;
+        }
+.navbar li a{
+font-family: 'Baloo Bhai 2', cursive;
+color: red;
+        }
+.container u{
+color:black;
+}
+.word input{
+color:black;
+}
+
+
+</style>
+</head>
+
+<body style="background-image:url('C:\Users\marga\OneDrive\Desktop\CSEProject\hod.jpg');">
+
+<div class="topnav">
+  
+  <form action="#" method="POST">     
+  <a class="active" href="/">HOME</a>
+  <a href="/login">LOGIN</a>
+  <a href="/contact">CONTACT</a>
+  <a href="/adminregister">ADMIN</a>
+  <a href="/help" class="split">REACH US</a>
+</div>
+	<head>
+		<meta charset="UTF-8">
+		<title> REGISTER HERE </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">			
+	</head>
+	<body></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<u><h1 class="word"> ADMIN REGISTER HERE</h1></u>
+			</div></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('register') }}" method="post">
+				<div class="msg"></div>
+					<input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
+					<input id="time" name="password" type="password" placeholder="Enter the present time" class="textbox"/></br></br>
+					<input id="email" name="email" type="text" placeholder="Enter Your Email ID" class="textbox"/></br></br>
+                    <input id="password" name="secret" type="password" placeholder="Enter Your secret_key" class="textbox"/><br><br>
+					<input type="submit" class="btn" value="REGISTER"></br>
+				</form>
+			</h2>
+			<p class="bottom">Already have an account? <a class="bottom" href="{{url_for('login')}}"> log in here</a></p>
+		</div>
+		</div>
+	</body>
+</html>
